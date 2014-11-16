@@ -6,5 +6,9 @@
     <string name="action_settings">Settings</string>
     <string name="action_refresh">Refresh</string>
     <string name="title_activity_detail">DetailActivity</string>
+    <string name="detail_text">Detail</string>
+    <string name="pref_title_edit_location">location</string>
+    <string name="pref_default_edit_location">Beijing</string>
+    <string name="pref_general_location_key">location</string>
 
 </resources>
