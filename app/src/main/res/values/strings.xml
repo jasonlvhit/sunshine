@@ -10,5 +10,25 @@
     <string name="pref_title_edit_location">location</string>
     <string name="pref_default_edit_location">Beijing</string>
     <string name="pref_general_location_key">location</string>
+    <!-- Label for the temperature units preference [CHAR LIMIT=30] -->
+    <string name="pref_units_label">Temperature Units</string>
+
+    <!-- Label for metric option in temperature unit preference [CHAR LIMIT=25] -->
+    <string name="pref_units_label_metric">Metric</string>
+
+    <!-- Label for imperial option in temperature unit preference [CHAR LIMIT=25] -->
+    <string name="pref_units_label_imperial">Imperial</string>
+
+    <!-- Key name for temperature unit preference in SharedPreferences [CHAR LIMIT=NONE] -->
+    <string name="pref_units_key" translatable="false">units</string>
+
+    <!-- Value in SharedPreferences for metric temperature unit option [CHAR LIMIT=NONE] -->
+    <string name="pref_units_metric" translatable="false">metric</string>
+
+    <!-- Value in SharedPreferences for imperial temperature unit option [CHAR LIMIT=NONE] -->
+    <string name="pref_units_imperial" translatable="false">imperial</string>
+
+    <string name = "action_share" >Share</string>
+    <string name="share_title">Share</string>
 
 </resources>
