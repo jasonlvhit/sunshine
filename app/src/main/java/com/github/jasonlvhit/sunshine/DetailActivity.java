@@ -96,7 +96,7 @@ public class DetailActivity extends ActionBarActivity {
         private Intent createShareForecastIntent(){
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
             shareIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-            shareIntent.setType("text/plain");
+            shareIntent.setType("text/html");
             shareIntent.putExtra(Intent.EXTRA_TEXT,
                     mforecastStr + FORECAST_SHARE_HASHTAG);
             return shareIntent;
