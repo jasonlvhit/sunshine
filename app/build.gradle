@@ -10,6 +10,7 @@ android {
         targetSdkVersion 20
         versionCode 1
         versionName "1.0"
+        testApplicationId "com.github.jasonlvhit.sunshine.tests"
     }
     buildTypes {
         release {
