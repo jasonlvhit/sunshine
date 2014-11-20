@@ -1,45 +1,89 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout
-    android:orientation="horizontal"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="16dp"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="match_parent">
 
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/detail_date_textview" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text=" - " />
+        <!-- Header: Day, Date -->
+        <TextView
+            android:id="@+id/detail_day_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tomorrow" />
 
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/detail_forecast_textview" />
+        <TextView
+            android:id="@+id/detail_date_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="June 24"/>
 
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text=" - " />
+        <!-- Main content: high, low, art, weather state -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
 
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/detail_high_textview" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="/" />
+                <TextView
+                    android:id="@+id/detail_high_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21°"/>
 
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/detail_low_textview" />
+                <TextView
+                    android:id="@+id/detail_low_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11°" />
+            </LinearLayout>
 
-</LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/detail_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/detail_forecast_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Humidity, wind, pressure -->
+        <TextView
+            android:id="@+id/detail_humidity_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="48%" />
+
+        <TextView
+            android:id="@+id/detail_wind_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6 km/h NW" />
+
+        <TextView
+            android:id="@+id/detail_pressure_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1014" />
+    </LinearLayout>
+</ScrollView>
