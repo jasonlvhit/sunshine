@@ -32,7 +32,7 @@
             android:parentActivityName="com.github.jasonlvhit.sunshine.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.sunshine.app.MainActivity" />
+                android:value="com.github.jasonlvhit.sunshine.MainActivity" />
         </activity>
         <provider
             android:authorities="com.github.jasonlvhit.sunshine"
