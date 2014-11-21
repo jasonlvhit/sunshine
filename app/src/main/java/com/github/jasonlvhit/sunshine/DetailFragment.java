@@ -99,7 +99,9 @@ public class DetailFragment extends Fragment implements LoaderManager.LoaderCall
     @Override
     public void onResume() {
         super.onResume();
-        if (mLocation != null &&
+        Intent intent = getActivity().getIntent();
+        if (intent != null && intent.hasExtra(DetailActivity.DATE_KEY) &&
+                mLocation != null &&
                 !mLocation.equals(Utility.getPreferredLocation(getActivity()))) {
             getLoaderManager().restartLoader(DETAIL_LOADER, null, this);
         }
